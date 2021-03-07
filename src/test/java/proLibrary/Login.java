@@ -12,11 +12,13 @@ import io.cucumber.java.en.When;
 
 public class Login {
 	
-	
+	public static ArrayList<Admin> getAdminarray() {
+	      return Adminarray;
+	   }
 
 	Admin f = new Admin();
 
-	ArrayList<Admin> Adminarray = new ArrayList<Admin>();
+	static ArrayList<Admin> Adminarray = new ArrayList<Admin>();
 	
 	@Given("The Admin Username as {string} and Password as {string}")
 	public void the_admin_username_as_and_password_as(String string, String string2) {
@@ -41,6 +43,7 @@ public class Login {
 	@Then("The password should be {string} and The Admin  is able to successfully login")
 	public void the_password_should_be_and_the_admin_is_able_to_successfully_login(String string) {
 		assertEquals(f.getPassword(), string);
+		f.AdminLogin();
 	}
 
 	@When("The Admin enters Username as {string} and wrongPassword as {string}")
