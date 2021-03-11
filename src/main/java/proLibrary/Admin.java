@@ -41,14 +41,22 @@ public class Admin {
 	    public void messege2() {
 			System.out.println("login fail");
 		} 
+	    public void messegeout() {
+			System.out.println("logout successfully");
+		}
 	    
-	    public static boolean Login ;  
+	    public  boolean Login;
+	    
+	    public boolean getstatc() {
+	    	
+	    	return Login;
+	    }
+	    
 	    //public static boolean b ;  
 	    public void AdminLogin() {
 	        Login=true;
+	       
 	      }
-	   /* public void AdminLogout() {
-	        Login=false;
-	      }*/
-	    
+	  
+	   
 }

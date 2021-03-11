@@ -12,7 +12,9 @@ public class Logut {
 	ArrayList<Admin> Adminarray = Login.getAdminarray();
 	Admin o ;
 	@Given("admin is logout with username {string}")
+	
 	public void admin_is_logout_with_username(String string) {
+		
 for (int i = 0; i < Adminarray.size(); i++) {
 			
 			if (Adminarray.get(i).getUsername().compareTo(string) == 0)
@@ -29,6 +31,7 @@ for (int i = 0; i < Adminarray.size(); i++) {
 		o.AdminLogin();
 		if (o.Login ==true) {
 			o.Login=false;
+	
 		}
 					
 	}
@@ -39,6 +42,7 @@ for (int i = 0; i < Adminarray.size(); i++) {
 public void the_admin_would_be_logged_out() {
 	
 	assert(o.Login==false);
+	o.messegeout();
 	 
 }
 
