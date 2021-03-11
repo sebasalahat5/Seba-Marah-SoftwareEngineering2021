@@ -1,6 +1,7 @@
 package proLibrary;
 import java.util.ArrayList;
 public class Book {
+	
 	private String title;
 	private String author;
 	private String isbn;
@@ -29,12 +30,12 @@ public class Book {
 	public void setSignature(String signature) {
 		this.signature = signature;
 	}
-	
+
 	static boolean isValidISBN(String isbn) 
     { 
        
-        int n = isbn.length(); 
-        if (n != 10) 
+        int c = isbn.length(); 
+        if (c != 10) 
             return false; 
  
         int sum = 0; 
@@ -47,12 +48,12 @@ public class Book {
         } 
   
          
-        char last = isbn.charAt(9); 
-        if (last != 'X' && (last < '0' ||  
-                            last > '9')) 
+        char lastdigit = isbn.charAt(9); 
+        if (lastdigit != 'X' && (lastdigit < '0' ||  
+                            lastdigit > '9')) 
             return false; 
   
-        sum += ((last == 'X') ? 10 : (last - '0')); 
+        sum += ((lastdigit == 'X') ? 10 : (lastdigit - '0')); 
   
         return (sum % 11 == 0); 
     }
