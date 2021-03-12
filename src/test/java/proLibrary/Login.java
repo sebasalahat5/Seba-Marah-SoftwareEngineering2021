@@ -17,7 +17,7 @@ import io.cucumber.java.en.When;
 
 
 public class Login {
-		marahAddBook t=new marahAddBook();
+		MarahAddBook t=new MarahAddBook();
 	public static ArrayList<Admin> getAdminarray() {
 	      return Adminarray;
 	   }
@@ -33,7 +33,7 @@ public	 static ArrayList<Admin> Adminarray = new ArrayList<Admin>();
 		f.setUsername(string);
 		f.setPassword(string2);
 		Adminarray.add(f);}
-		//t.Adminarray2.add(f);}
+		
 
 
 @When("The Admin enters Username as {string} and Password as {string}")
