@@ -46,11 +46,11 @@ Scenario Outline:
 Searching a title also works when the user/administrator is logged in 
 
 	When the Admin with username "seba" enters substring <title> 
-	Then book <title> will manifest successfully 
+	Then book <output> will manifest successfully 
 	
 	Examples: 
-		|title|	
-		|"tall oaks"|
+		|title|output|
+		|"tall oaks"|"tall oaks"|
 Scenario Outline:
 Searching an author also works when the user/administrator is logged in 
 
