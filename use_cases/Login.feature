@@ -8,6 +8,10 @@ Scenario: Administrator can log in with valid credentials
 	Then   The password should be "123" and The Admin  is able to successfully login 
 	
 	
+	
+	
+	
+	
 Scenario: Administrator has the wrong password 
 	Given The Admin Username as "seba" and Password as "654" 
 	

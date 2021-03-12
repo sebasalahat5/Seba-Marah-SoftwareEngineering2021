@@ -5,6 +5,12 @@ public class Book {
 	private String author;
 	private String isbn;
 	private String signature;
+	
+	
+	
+	
+	
+	
 	public String getTitle() {
 		return title;
 	}
