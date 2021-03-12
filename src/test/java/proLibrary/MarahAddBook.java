@@ -16,7 +16,12 @@ import io.cucumber.java.en.When;
 
 
 
-public class marahAddBook {
+
+
+
+
+
+public class MarahAddBook {
 	String input;
 	public boolean book;
 	public boolean D;

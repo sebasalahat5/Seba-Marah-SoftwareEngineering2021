@@ -27,6 +27,12 @@ Scenario Outline: Searching for a substring of the title
 		|" lost"|"the lost apothecary"|
 		|"oaks"|"tall oaks"|
 		
+		
+		
+		
+		
+		
+		
 Scenario Outline: Searching for a substring of the author 
 
 	When admin with username "marah" enters the subS <author> 

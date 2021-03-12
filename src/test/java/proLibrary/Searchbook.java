@@ -17,7 +17,10 @@ import io.cucumber.java.en.When;
 
 
 
-	public class searchbook {
+
+
+
+	public class Searchbook {
 		Book b1;
 		Book q;
 		public String username1 = "marah";
