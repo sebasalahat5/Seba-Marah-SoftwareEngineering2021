@@ -48,10 +48,10 @@ public class MarahAddBook {
 		 if (A) {
 			 System.out.println("after login");
 				if(G.isValidISBN(G.getIsbn())) {
-					System.out.print("validisbn");
+					System.out.println("validisbn");
 				 
 					if( G.isUniqeSig(string3, Bookarray)) {	
-						System.out.print("uni");
+						System.out.println("uniqsig");
 				        Bookarray.add(G);
 					}
 					 book=true;
