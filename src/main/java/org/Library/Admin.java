@@ -2,7 +2,8 @@ package org.Library;
 public class Admin {
 	
 	private String AdminName;
-	private	String admin_pass;		
+	private	String admin_pass;	
+	
 	public String getUsername()
     {
         return AdminName;
