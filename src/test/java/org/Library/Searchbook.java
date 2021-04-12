@@ -1,4 +1,4 @@
-package proLibrary;
+package org.Library;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,19 +6,12 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.Library.Book;
+import org.Library.Library;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-
-
-
-
-
-
-
-
-
 
 	public class Searchbook {
 		Book b1;
@@ -47,21 +40,17 @@ import io.cucumber.java.en.When;
 			  b1.setAuthor(bookLibrary.get(i).get(1).toString());
 			  b1.setIsbn(bookLibrary.get(i).get(2).toString());
 			  b1.setSignature(bookLibrary.get(i).get(3).toString());
-			  searchLibrary.myLibrary.add(b1);
-			
+			  searchLibrary.myLibrary.add(b1);			
 			}
-		   
 		}
 
 		@When("admin with username {string} enters the substring {string}")
 		public void admin_with_username_enters_the_substring(String string, String string2) {
 			 q= searchLibrary.SearchTitle(string2);
 		}
-
 		@Then("book {string} will appeare successfully")
 		public void book_will_appeare_successfully(String string) {
-			assertEquals(string,q.getTitle());
-			  
+			assertEquals(string,q.getTitle());	  
 		}
 
 		@When("admin with username {string} enters the subS {string}")

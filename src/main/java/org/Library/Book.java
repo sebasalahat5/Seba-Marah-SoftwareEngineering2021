@@ -1,16 +1,10 @@
-package proLibrary;
+package org.Library;
 import java.util.ArrayList;
 public class Book {
 	private String title;
 	private String author;
 	private String isbn;
 	private String signature;
-	
-	
-	
-	
-	
-	
 	public String getTitle() {
 		return title;
 	}
@@ -35,7 +29,6 @@ public class Book {
 	public void setSignature(String signature) {
 		this.signature = signature;
 	}
-	
 	static boolean isValidISBN(String isbn) 
     { 
        
@@ -50,9 +43,7 @@ public class Book {
             if (0 > digit || 9 < digit) 
                 return false; 
             sum += (digit * (10 - i)); 
-        } 
-  
-         
+        }          
         char lastdigit = isbn.charAt(9); 
         if (lastdigit != 'X' && (lastdigit < '0' ||  
                             lastdigit > '9')) 
@@ -62,7 +53,6 @@ public class Book {
   
         return (sum % 11 == 0); 
     }
-
 	static boolean isUniqeSig(String Sig,ArrayList <Book> v) {
 		boolean w =true ;
 		for (int i = 0; i < v.size(); i++) {
@@ -71,16 +61,9 @@ public class Book {
 			}
 			else w=true;
 			
-		}
-		
-		
-		
-		
+		}		
 		return w;
-		
-	
 	}
-  
 
 } 
   

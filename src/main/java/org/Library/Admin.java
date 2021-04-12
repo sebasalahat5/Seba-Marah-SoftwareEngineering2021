@@ -1,39 +1,26 @@
-package proLibrary;
-
-import java.util.ArrayList;
-
+package org.Library;
 public class Admin {
 	
-	private String Adminname;
-	private	String Adminpass;
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
+	private String AdminName;
+	private	String admin_pass;		
 	public String getUsername()
     {
-        return Adminname;
+        return AdminName;
     }
 
 	 public String getPassword()
 	    {
-	        return Adminpass;
+	        return admin_pass;
 	    }
 
-	 public void setUsername(String AdminName)
+	 public void setUsername(String admin_name)
 	    {
-	        this.Adminname = AdminName;
+	        this.AdminName = admin_name;
 	    }
 
-	    public void setPassword(String Pass)
+	    public void setPassword(String pass)
 	    {
-	        this.Adminpass = Pass;
+	        this.admin_pass = pass;
 	    }
 	    public Admin() {
 	    	
@@ -50,16 +37,15 @@ public class Admin {
 			System.out.println("logout successfully");
 		}
 	    
-	    public  boolean Login;
+	    public  static boolean login;
 	    
 	    public boolean getstatc() {
 	    	
-	    	return Login;
+	    	return login;
 	    }
-	    
-	    //public static boolean b ;  
-	    public void AdminLogin() {
-	        Login=true;
+	   
+	    public void adminLogin() {
+	        login=true;
 	       
 	      }
 	  

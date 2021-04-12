@@ -1,10 +1,6 @@
-package proLibrary;
-
+package org.Library;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
-
 public class Library
 {
 	public ArrayList<Book> myLibrary = new ArrayList <Book>();
@@ -14,14 +10,8 @@ public class Library
 	public String username;
 	public boolean isbnExist = false;
 	public boolean found = false;
-	
-	
-	
-	
-	
 	public Library()
 	{
-		
 	}
 	public void Input_fun(String input)
 	{
@@ -40,13 +30,9 @@ public class Library
 			else if(searchSt[0].equalsIgnoreCase("isbn"))
 				SearchISBN(searchSt[1]);
 			else
-				System.out.println("Please Enter the write statment");
-				
-			
+				System.out.println("Please Enter the write statment");		
 		}
-		
 	}
-	/////////////////////////////////
 	public Book SearchTitle(String searchFor)
 	{
 		toPrint.clear();
@@ -68,7 +54,6 @@ public class Library
 		if(!found)
 		{
 			result.setTitle("Not Found");
-			
 			System.out.println("Result of searching about title: "+searchFor+" Not Found");
 		}
 		else
@@ -78,15 +63,12 @@ public class Library
 		}
 		return result;
 	}
-	/////////////////////////////////
 	public Book SearchAuthor(String searchFor)
 	{
-		toPrint.clear();
-		
+		toPrint.clear();	
 		Book result= new Book();
 		for(int i=0; i<myLibrary.size(); i++)
 		{
-			
 			if(myLibrary.get(i).getAuthor().contains(searchFor))
 			{
 				result = new Book();
@@ -97,8 +79,7 @@ public class Library
 				toPrint.add(result);	
 				found = true;				
 			}
-		}
-			
+		}	
 		if(!found)
 		{
 			result.setTitle("Not Found");
@@ -115,7 +96,6 @@ public class Library
 	{
 		toPrint.clear();
 		Book result = new Book();
-		
 		for(int i=0; i<myLibrary.size(); i++)
 		{
 			if(myLibrary.get(i).getIsbn().contains(searchFor))
@@ -125,7 +105,6 @@ public class Library
 				result.setAuthor(myLibrary.get(i).getAuthor());
 				result.setIsbn(myLibrary.get(i).getIsbn());
 				result.setSignature(myLibrary.get(i).getSignature());
-				
 				toPrint.add(result);
 				found = true;
 			}
@@ -141,10 +120,7 @@ public class Library
 			printOutput();
 		}
 		return result;
-			
 	}
-		
-	
 	public void printOutput()
 	{
 		if(toPrint.isEmpty())
@@ -154,12 +130,8 @@ public class Library
 			for(int p=1; p<= toPrint.size(); p++)
 			{
 				System.out.println("Title:  "+toPrint.get(p-1).getTitle()+"  Author:  "+toPrint.get(p-1).getAuthor()+
-						"  ISBN:  "+toPrint.get(p-1).getIsbn()+"  Signtaure:  "+toPrint.get(p-1).getSignature());
-				
+						"  ISBN:  "+toPrint.get(p-1).getIsbn()+"  Signtaure:  "+toPrint.get(p-1).getSignature());			
 			}
 		}
-		
 	}
-
-	
 }
