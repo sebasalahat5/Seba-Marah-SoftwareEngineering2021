@@ -8,6 +8,7 @@ public class Admin {
     {
         return AdminName;
     }
+	
 
 	 public String getPassword()
 	    {
