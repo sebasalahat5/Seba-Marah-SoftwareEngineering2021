@@ -1,12 +1,12 @@
-package org.Library;
+package org.library;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 
-import org.Library.Admin;
-import org.Library.Book;
-import org.Library.Library;
+import org.library.Admin;
+import org.library.Book;
+import org.library.Library;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

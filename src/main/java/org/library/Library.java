@@ -1,19 +1,20 @@
-package org.Library;
+package org.library;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class Library
 {
-	public ArrayList<Book> myLibrary = new ArrayList <Book>();
-	public ArrayList<Book> toPrint = new ArrayList <Book>();
+	public static List<Book> myLibrary = new ArrayList <Book>();
+	public static List<Book> toPrint = new ArrayList <Book>();
    
-	public String [] inputString ;
-	public String username;
-	public boolean isbnExist = false;
-	public boolean found = false;
+	public static String [] inputString ;
+	public static String username;
+	public static boolean isbnExist = false;
+	public static boolean found = false;
 	public Library()
 	{
 	}
-	public void Input_fun(String input)
+	public void inputFun(String input)
 	{
 		String myInput;
 		Scanner input1=new Scanner(System.in); 
@@ -24,16 +25,16 @@ public class Library
 			String [] searchSt;
 			searchSt = inputString[1].split("-");
 			if(searchSt[0].equalsIgnoreCase("title"))
-				SearchTitle(searchSt[1]);
+				searchTitle(searchSt[1]);
 			else if(searchSt[0].equalsIgnoreCase("author"))
-				SearchAuthor(searchSt[1]);
+				searchAuthor(searchSt[1]);
 			else if(searchSt[0].equalsIgnoreCase("isbn"))
-				SearchISBN(searchSt[1]);
+				searchIsbn(searchSt[1]);
 			else
 				System.out.println("Please Enter the write statment");		
 		}
 	}
-	public Book SearchTitle(String searchFor)
+	public Book searchTitle(String searchFor)
 	{
 		toPrint.clear();
 		Book result = new Book();
@@ -63,7 +64,7 @@ public class Library
 		}
 		return result;
 	}
-	public Book SearchAuthor(String searchFor)
+	public Book searchAuthor(String searchFor)
 	{
 		toPrint.clear();	
 		Book result= new Book();
@@ -92,7 +93,7 @@ public class Library
 		}
 		return result;
 	}
-	public Book SearchISBN(String searchFor)
+	public Book searchIsbn(String searchFor)
 	{
 		toPrint.clear();
 		Book result = new Book();

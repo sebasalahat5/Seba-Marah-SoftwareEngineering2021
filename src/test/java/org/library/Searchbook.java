@@ -1,4 +1,4 @@
-package org.Library;
+package org.library;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.Library.Book;
-import org.Library.Library;
+import org.library.Book;
+import org.library.Library;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -46,7 +46,7 @@ import io.cucumber.java.en.When;
 
 		@When("admin with username {string} enters the substring {string}")
 		public void admin_with_username_enters_the_substring(String string, String string2) {
-			 q= searchLibrary.SearchTitle(string2);
+			 q= searchLibrary.searchTitle(string2);
 		}
 		@Then("book {string} will appeare successfully")
 		public void book_will_appeare_successfully(String string) {
@@ -55,7 +55,7 @@ import io.cucumber.java.en.When;
 
 		@When("admin with username {string} enters the subS {string}")
 		public void admin_with_username_enters_the_sub_s(String string, String string2) {
-			 q= searchLibrary.SearchAuthor(string2);
+			 q= searchLibrary.searchAuthor(string2);
 		}
 
 		@Then("book {string} will appear successfully")
@@ -65,7 +65,7 @@ import io.cucumber.java.en.When;
 		}
 		@When("admin with username {string} enters the input {string}")
 		public void admin_with_username_enters_the_input(String string, String string2) {
-			 q= searchLibrary.SearchISBN(string2);
+			 q= searchLibrary.searchIsbn(string2);
 		}
 
 		@Then("book {string} will show successfully")
@@ -75,7 +75,7 @@ import io.cucumber.java.en.When;
 	
 		@When("the Admin with username {string} enters substring {string}")
 		public void the_admin_with_username_enters_substring(String string, String string2) {
-			 q= searchLibrary.SearchTitle(string2);
+			 q= searchLibrary.searchTitle(string2);
 		}
 
 		@Then("book {string} will manifest successfully")
@@ -84,7 +84,7 @@ import io.cucumber.java.en.When;
 		}
 		@When("the admin with username {string} enters substring {string}")
 		public void the_admin_with_username_enters_substring1(String string, String string2) {
-			 q= searchLibrary.SearchAuthor(string2);
+			 q= searchLibrary.searchAuthor(string2);
 		}
 
 		@Then("book {string} will arise successfully")
@@ -93,7 +93,7 @@ import io.cucumber.java.en.When;
 		}
 		@When("The Admin with username {string} enters substring {string}")
 		public void the_admin_with_username_enters_substring2(String string, String string2) {
-			 q= searchLibrary.SearchISBN(string2);
+			 q= searchLibrary.searchIsbn(string2);
 		}
 
 		@Then("book {string} will reveal successfully")
@@ -103,7 +103,7 @@ import io.cucumber.java.en.When;
 		
 		@When("the admin enters substring {string} to searching about book")
 		public void the_admin_enters_substring_to_searching_about_book(String string) {
-			q= searchLibrary.SearchTitle(string);
+			q= searchLibrary.searchTitle(string);
 		}
 
 		@Then("the book with {string} not appear")
@@ -113,7 +113,7 @@ import io.cucumber.java.en.When;
 
 		@When("the admin enters substring {string} to searching1 about book")
 		public void the_admin_enters_substring_to_searching1_about_book(String string) {
-			q= searchLibrary.SearchAuthor(string);
+			q= searchLibrary.searchAuthor(string);
 		}
 
 		@Then("the book with {string} not manifest")
@@ -125,7 +125,7 @@ import io.cucumber.java.en.When;
 		
 		@When("the admin enters substring {string} to searching2 about book")
 		public void the_admin_enters_substring_to_searching2_about_book(String string) {
-			q= searchLibrary.SearchISBN(string);
+			q= searchLibrary.searchIsbn(string);
 		}
 
 		@Then("the book with {string} not reveal")
@@ -134,7 +134,7 @@ import io.cucumber.java.en.When;
 		}
 		@When("the Admin enters substring {string}")
 		public void the_admin_enters_substring(String string) {
-			q=searchLibrary.SearchTitle(string);
+			q=searchLibrary.searchTitle(string);
 		}
 
 		@Then("all book {string} that matches the specifications will appear")
@@ -149,7 +149,7 @@ import io.cucumber.java.en.When;
 
 		@When("admin enters substring {string}")
 		public void admin_enters_substring(String string) {
-			q=searchLibrary.SearchAuthor(string);
+			q=searchLibrary.searchAuthor(string);
 		}
 
 		@Then("All book {string} that matches the specifications will reveal")

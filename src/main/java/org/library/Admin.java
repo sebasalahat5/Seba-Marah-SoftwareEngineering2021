@@ -1,30 +1,30 @@
-package org.Library;
+package org.library;
 public class Admin {
 	
-	private String AdminName;
-	private	String admin_pass;	
+	private String adminName;
+	private	String adminPass;	
 	
 	public String getUsername()
     {
-        return AdminName;
+        return adminName;
     }
 	
 
 	 public String getPassword()
 	    {
-	        return admin_pass;
+	        return adminPass;
 	    
 	    
 	    }
 
 	 public void setUsername(String admin_name)
 	    {
-	        this.AdminName = admin_name;
+	        this.adminName = admin_name;
 	    }
 
 	    public void setPassword(String pass)
 	    {
-	        this.admin_pass = pass;
+	        this.adminPass = pass;
 	    }
 	    public Admin() {
 	    	
@@ -48,7 +48,7 @@ public class Admin {
 	    	return login;
 	    }
 	   
-	    public void adminLogin() {
+	    public static void adminLogin() {
 	        login=true;
 	       
 	      }
