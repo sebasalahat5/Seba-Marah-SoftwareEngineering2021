@@ -11,6 +11,8 @@ public class Admin {
 	 public String getPassword()
 	    {
 	        return admin_pass;
+	    
+	    
 	    }
 
 	 public void setUsername(String admin_name)
