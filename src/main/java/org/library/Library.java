@@ -10,9 +10,6 @@ public class Library
     String username;
 	boolean isbnExist = false,found = false;
 	
-	public Library()
-	{
-	}
 	public void inputFun(String input)
 	{
 		String myInput;

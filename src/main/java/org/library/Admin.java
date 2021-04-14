@@ -22,19 +22,16 @@ public class Admin {
 	    
 	    }
 
-	 public void setUsername(String admin_name)
+	 public void setUsername(String adminName)
 	    {
-	        this.adminName = admin_name;
+	        this.adminName = adminName;
 	    }
 
 	    public void setPassword(String pass)
 	    {
 	        this.adminPass = pass;
 	    }
-	    public Admin() {
-	    	
-	    }
-	 
+	    
 	    public void messege() {
 	    	
 			logger.log( Level.WARNING, "login successfully");
@@ -42,10 +39,10 @@ public class Admin {
 		}
 	    
 	    public void messege2() {
-			System.out.println("login fail");
+	    	logger.log( Level.WARNING,"login fail");
 		} 
 	    public void messegeout() {
-			System.out.println("logout successfully");
+	    	logger.log( Level.WARNING,"logout successfully");
 		}
 	    
 	    public static boolean login;
