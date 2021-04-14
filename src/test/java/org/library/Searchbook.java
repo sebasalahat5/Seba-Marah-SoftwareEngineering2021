@@ -108,7 +108,15 @@ import io.cucumber.java.en.When;
 
 		@Then("the book with {string} not appear")
 		public void the_book_with_not_appear(String string) {
-			assertEquals(string,q.getTitle());
+			String x ;
+			if(q.getTitle() == null)
+			{
+				x="Not Found";
+			}
+			else 
+				x=q.getTitle();
+			
+			assertEquals(string,x);
 		}
 
 		@When("the admin enters substring {string} to searching1 about book")
@@ -119,7 +127,15 @@ import io.cucumber.java.en.When;
 		@Then("the book with {string} not manifest")
 		public void the_book_with_not_manifest(String string) {
 			
-			assertEquals(string,q.getTitle());
+			String x ;
+			if(q.getTitle() == null)
+			{
+				x="Not Found";
+			}
+			else 
+				x=q.getTitle();
+			
+			assertEquals(string,x);
 		}
 
 		
@@ -130,7 +146,15 @@ import io.cucumber.java.en.When;
 
 		@Then("the book with {string} not reveal")
 		public void the_book_with_not_reveal(String string) {
-			assertEquals(string,q.getTitle());
+			String x ;
+			if(q.getTitle() == null)
+			{
+				x="Not Found";
+			}
+			else 
+				x=q.getTitle();
+			
+			assertEquals(string,x);
 		}
 		@When("the Admin enters substring {string}")
 		public void the_admin_enters_substring(String string) {
@@ -143,7 +167,15 @@ import io.cucumber.java.en.When;
 			ex=string.split(",");
 			for(int i=0; i<searchLibrary.toPrint.size(); i++)
 			{
-				assertEquals(ex[i],searchLibrary.toPrint.get(i).getTitle());
+				if(ex[0].equalsIgnoreCase(searchLibrary.toPrint.get(i).getTitle()))
+				{
+					assertEquals(ex[0],searchLibrary.toPrint.get(i).getTitle());
+				}
+				if(ex[1].equalsIgnoreCase(searchLibrary.toPrint.get(i).getTitle()))
+				{
+					assertEquals(ex[1],searchLibrary.toPrint.get(i).getTitle());
+				}
+				
 			}
 			}
 
@@ -158,7 +190,15 @@ import io.cucumber.java.en.When;
 			ex=string.split(",");
 			for(int i=0; i<searchLibrary.toPrint.size(); i++)
 			{
-				assertEquals(ex[i],searchLibrary.toPrint.get(i).getTitle());
+				if(ex[0].equalsIgnoreCase(searchLibrary.toPrint.get(i).getTitle()))
+				{
+					assertEquals(ex[0],searchLibrary.toPrint.get(i).getTitle());
+				}
+				if(ex[1].equalsIgnoreCase(searchLibrary.toPrint.get(i).getTitle()))
+				{
+					assertEquals(ex[1],searchLibrary.toPrint.get(i).getTitle());
+				}
+				
 			}
 		}
 		

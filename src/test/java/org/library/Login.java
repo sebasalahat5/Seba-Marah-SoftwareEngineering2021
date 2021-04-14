@@ -52,4 +52,3 @@ public static ArrayList<Admin> Adminarray = new ArrayList<Admin>();
 		assertNotEquals(f.getPassword(),string);
 	}
 }
-
