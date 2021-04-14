@@ -1,16 +1,18 @@
 package org.library;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+
 public class Library
 {
-	List<Book> myLibrary,toPrint = new ArrayList <Book>();
-	
+	List<Book> myLibrary = new ArrayList <Book>();
+	List<Book> toPrint = new ArrayList <Book>();
    
     String [] inputString ;
     String username;
-	boolean isbnExist=false,found = false;
+	boolean isbnExist = false,found = false;
 	
+	public Library()
+	{
+	}
 	public void inputFun(String input)
 	{
 		String myInput;
