@@ -53,10 +53,10 @@ public class Book {
   
         return (sum % 11 == 0); 
     }
-	static boolean isUniqeSig(String Sig,ArrayList <Book> v) {
+	static boolean isUniqeSig(String sig,ArrayList <Book> v) {
 		boolean w =true ;
 		for (int i = 0; i < v.size(); i++) {
-			if (v.get(i).getSignature().equals(Sig)) {
+			if (v.get(i).getSignature().equals(sig)) {
 				w=false;
 			}
 			else w=true;
