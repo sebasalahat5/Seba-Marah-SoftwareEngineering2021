@@ -8,28 +8,10 @@ public class Library
    
     String [] inputString ;
     String username;
-	boolean isbnExist = false,found = false;
+	boolean isbnExist = false;
+	boolean found = false;
 	
-	public void inputFun(String input)
-	{
-		String myInput;
-		Scanner input1=new Scanner(System.in); 
-		myInput = input1.nextLine();
-		inputString = myInput.split(" ");
-		if(inputString[0].equalsIgnoreCase("search"))
-		{
-			String [] searchSt;
-			searchSt = inputString[1].split("-");
-			if(searchSt[0].equalsIgnoreCase("title"))
-				searchTitle(searchSt[1]);
-			else if(searchSt[0].equalsIgnoreCase("author"))
-				searchAuthor(searchSt[1]);
-			else if(searchSt[0].equalsIgnoreCase("isbn"))
-				searchIsbn(searchSt[1]);
-			else
-				System.out.println("Please Enter the write statment");		
-		}
-	}
+	
 	public Book searchTitle(String searchFor)
 	{
 		toPrint.clear();
