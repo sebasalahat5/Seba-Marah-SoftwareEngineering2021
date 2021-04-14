@@ -1,5 +1,10 @@
 package org.library;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Admin {
+	static Logger logger = Logger.getLogger(Admin.class.getName());
 	
 	private String adminName;
 	private	String adminPass;	
@@ -31,7 +36,9 @@ public class Admin {
 	    }
 	 
 	    public void messege() {
-			System.out.println("login successfully");
+	    	
+			logger.log( Level.WARNING, "login successfully");
+			
 		}
 	    
 	    public void messege2() {

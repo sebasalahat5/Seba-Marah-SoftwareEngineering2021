@@ -117,7 +117,7 @@ public class Library
 		}
 		else
 		{
-			System.out.print("Result of searching about ISBN   "+searchFor+":  ");
+			System.out.println("Result of searching about ISBN   "+searchFor+":  ");
 			printOutput();
 		}
 		return result;
