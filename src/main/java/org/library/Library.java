@@ -4,16 +4,13 @@ import java.util.List;
 import java.util.Scanner;
 public class Library
 {
-	List<Book> myLibrary = new ArrayList <Book>();
-	List<Book> toPrint = new ArrayList <Book>();
+	List<Book> myLibrary,toPrint = new ArrayList <Book>();
+	
    
     String [] inputString ;
     String username;
-	boolean isbnExist = false;
-	boolean found = false;
-	public Library()
-	{
-	}
+	boolean isbnExist=false,found = false;
+	
 	public void inputFun(String input)
 	{
 		String myInput;
