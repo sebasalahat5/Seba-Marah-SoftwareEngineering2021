@@ -36,11 +36,11 @@ public class Library
 		if(!found)
 		{
 			resultTile.setTitle(NOT_FOUND);
-			System.out.println("Result of searching about title: "+searchFor+NOT_FOUND);
+			logger.log(Level.WARNING,"Result of searching about title: "+searchFor+NOT_FOUND);
 		}
 		else
 		{
-			System.out.print("Result of searching about title    "+searchFor+": ");
+			logger.log(Level.WARNING,"Result of searching about title    "+searchFor+": ");
 			printOutput();
 		}
 		return resultTile;
@@ -65,11 +65,11 @@ public class Library
 		if(!found)
 		{
 			resultAuthor.setTitle(NOT_FOUND);
-			System.out.println("Result of searching about author:  "+searchFor+NOT_FOUND);
+			logger.log(Level.WARNING,"Result of searching about author:  "+searchFor+NOT_FOUND);
 		}
 		else
 		{
-			System.out.print("Result of searching about author    "+searchFor+":  ");
+			logger.log(Level.WARNING,"Result of searching about author    "+searchFor+":  ");
 			printOutput();
 		}
 		return resultAuthor;
@@ -94,11 +94,11 @@ public class Library
 		if(!found)
 		{
 			resultIsbn.setTitle(NOT_FOUND);
-			System.out.println("Result of searching about ISBN:   "+searchFor+NOT_FOUND);
+			logger.log(Level.WARNING,"Result of searching about ISBN:   "+searchFor+NOT_FOUND);
 		}
 		else
 		{
-			System.out.println("Result of searching about ISBN   "+searchFor+":  ");
+			logger.log(Level.WARNING,"Result of searching about ISBN   "+searchFor+":  ");
 			printOutput();
 		}
 		return resultIsbn;
@@ -106,7 +106,7 @@ public class Library
 	public void printOutput()
 	{
 		if(toPrint.isEmpty())
-			System.out.println(NOT_FOUND);
+			logger.log(Level.WARNING,NOT_FOUND);
 		else
 		{
 			for(int p=1; p<= toPrint.size(); p++)
