@@ -7,7 +7,7 @@ public class Library
 	public static List<Book> myLibrary = new ArrayList <Book>();
 	public static List<Book> toPrint = new ArrayList <Book>();
    
-	public static String [] inputString ;
+    String [] inputString ;
 	public static String username;
 	public static boolean isbnExist = false;
 	public static boolean found = false;

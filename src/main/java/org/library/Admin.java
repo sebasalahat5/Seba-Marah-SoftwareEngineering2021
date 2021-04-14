@@ -48,7 +48,7 @@ public class Admin {
 			System.out.println("logout successfully");
 		}
 	    
-	    public  static boolean login;
+	    public static boolean login;
 	    
 	    public boolean getstatc() {
 	    	
