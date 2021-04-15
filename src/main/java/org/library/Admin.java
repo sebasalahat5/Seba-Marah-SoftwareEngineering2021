@@ -45,7 +45,7 @@ public class Admin {
 	    	logger.log( Level.WARNING,"logout successfully");
 		}
 	    
-	    public static boolean login;
+	    static boolean login;
 	    
 	    public boolean getstatc() {
 	    	
