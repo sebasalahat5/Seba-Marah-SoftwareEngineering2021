@@ -36,11 +36,13 @@ public class Library
 		if(!found)
 		{
 			resultTile.setTitle(NOT_FOUND);
-			logger.log(Level.WARNING,"Result of searching about title: "+searchFor+NOT_FOUND);
+			String str = String.format("\"Result of searching about title: \" %s %s",searchFor,NOT_FOUND);
+			logger.log(Level.WARNING,str);
 		}
 		else
 		{
-			logger.log(Level.WARNING,"Result of searching about title    "+searchFor+": ");
+			String st = String.format("\"Result of searching about title: \" %s",searchFor);
+			logger.log(Level.WARNING,st);
 			printOutput();
 		}
 		return resultTile;
@@ -65,11 +67,15 @@ public class Library
 		if(!found)
 		{
 			resultAuthor.setTitle(NOT_FOUND);
-			logger.log(Level.WARNING,"Result of searching about author:  "+searchFor+NOT_FOUND);
+			String strAuthor = String.format("\"Result of searching about author: \" %s %s",searchFor,NOT_FOUND);
+			logger.log(Level.WARNING,strAuthor);
+			
 		}
 		else
 		{
-			logger.log(Level.WARNING,"Result of searching about author    "+searchFor+":  ");
+			String stAuthor = String.format("\"Result of searching about author: \" %s",searchFor);
+			logger.log(Level.WARNING,stAuthor);
+			
 			printOutput();
 		}
 		return resultAuthor;
@@ -94,11 +100,14 @@ public class Library
 		if(!found)
 		{
 			resultIsbn.setTitle(NOT_FOUND);
-			logger.log(Level.WARNING,"Result of searching about ISBN:   "+searchFor+NOT_FOUND);
+			String strIsbn = String.format("\"Result of searching about isbn: \" %s %s",searchFor,NOT_FOUND);
+			logger.log(Level.WARNING,strIsbn);
+			
 		}
 		else
 		{
-			logger.log(Level.WARNING,"Result of searching about ISBN   "+searchFor+":  ");
+			String stIsbn = String.format("\"Result of searching about isbn: \" %s",searchFor);
+			logger.log(Level.WARNING,stIsbn);
 			printOutput();
 		}
 		return resultIsbn;
@@ -111,8 +120,13 @@ public class Library
 		{
 			for(int p=1; p<= toPrint.size(); p++)
 			{
-				logger.log(Level.WARNING,"Title:  "+toPrint.get(p-1).getTitle()+"  Author:  "+toPrint.get(p-1).getAuthor()+
-						"  ISBN:  "+toPrint.get(p-1).getIsbn()+"  Signtaure:  "+toPrint.get(p-1).getSignature());			
+				String result = String.format("Title: %s Author: %s ISBN: %s Signature: %s",
+						toPrint.get(p-1).getTitle(),toPrint.get(p-1).getAuthor(),
+						toPrint.get(p-1).getIsbn(),toPrint.get(p-1).getSignature());
+				
+				logger.log(Level.WARNING,result);
+				
+				
 			}
 		}
 	}

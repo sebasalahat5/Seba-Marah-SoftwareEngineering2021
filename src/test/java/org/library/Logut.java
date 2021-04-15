@@ -10,6 +10,7 @@ import io.cucumber.java.en.When;
 public class Logut {
 	ArrayList<Admin> Adminarray = Login.getAdminarray();
 	Admin o ;
+	
 	@Given("admin is logout with username {string}")
 	public void admin_is_logout_with_username(String string) {
 for (int i = 0; i < Adminarray.size(); i++) {

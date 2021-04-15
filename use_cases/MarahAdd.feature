@@ -1,8 +1,6 @@
 Feature: marahAddbook 
 
 
-
-
 Scenario: Add a book when the administrator is logged in 
 
 	Given The Admin with Username as "marah"  is logged in 
