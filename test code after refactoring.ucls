@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="org.library.MarahAddBook" project="proLibrary" 
     file="/proLibrary/src/test/java/org/library/MarahAddBook.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="346" width="464" x="127" y="206"/>    
+    <position height="346" width="464" x="128" y="212"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,8 +48,12 @@
   </class>  
   <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="7" name="t"/>      
-      <multiplicity id="8" minimum="0" maximum="1"/>    
+      <attribute id="7" name="t">        
+        <position height="0" width="0" x="1" y="6"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="1">        
+        <position height="0" width="0" x="1" y="6"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

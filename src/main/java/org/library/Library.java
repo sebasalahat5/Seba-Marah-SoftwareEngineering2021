@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 
 public class Library
 {
+	
 	static Logger logger = Logger.getLogger(Library.class.getName());
 	List<Book> myLibrary = new ArrayList <Book>();
 	List<Book> toPrint = new ArrayList <Book>();

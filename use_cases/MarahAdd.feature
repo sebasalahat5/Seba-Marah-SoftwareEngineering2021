@@ -11,14 +11,6 @@ Scenario: Add a book when the administrator is logged in
 	Then The book will be added 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 Scenario: Add a book when the administrator is not logged in 
 	Given   The Admin with Username as "marah"  is not logged in 
 	 

@@ -12,12 +12,6 @@ the library has repository of books with their specifications(title,author,ISBN 
 		|tall oaks|Chris Whaitaker|1785770306|whaitaker1999|	
 		
 		
-	
-	
-	
-	
-	
-		
 Scenario Outline: Searching for a substring of the title 
 
 	When admin with username "marah" enters the substring <title> 

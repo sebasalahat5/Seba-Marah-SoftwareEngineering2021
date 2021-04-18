@@ -16,8 +16,8 @@ public class Logut {
 for (int i = 0; i < Adminarray.size(); i++) {
 			if (Adminarray.get(i).getUsername().compareTo(string) == 0)
 				 {
-				o=Adminarray.get(i);
-			}
+					o=Adminarray.get(i);
+				 }
 			}
 	}
 	@When("the admin is login")
