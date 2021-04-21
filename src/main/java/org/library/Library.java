@@ -16,6 +16,16 @@ public class Library
 	boolean found = false;
 	private static final String NOT_FOUND = "Not Found";
 	
+	public Book setBookFeatures(int i) {
+		Book resultTile;
+		resultTile = new Book();
+		resultTile.setTitle(myLibrary.get(i).getTitle());
+		resultTile.setAuthor(myLibrary.get(i).getAuthor());
+		resultTile.setIsbn(myLibrary.get(i).getIsbn());
+		resultTile.setSignature(myLibrary.get(i).getSignature());
+		return resultTile;
+	}
+	
 	public Book searchTitle(String searchFor)
 	{
 		toPrint.clear();
@@ -25,11 +35,7 @@ public class Library
 		{
 			if(myLibrary.get(i).getTitle().contains(searchFor))
 			{
-				resultTile = new Book();
-				resultTile.setTitle(myLibrary.get(i).getTitle());
-				resultTile.setAuthor(myLibrary.get(i).getAuthor());
-				resultTile.setIsbn(myLibrary.get(i).getIsbn());
-				resultTile.setSignature(myLibrary.get(i).getSignature());
+				resultTile = setBookFeatures(i);
 				toPrint.add(resultTile);
 				found = true;
 			}
@@ -48,6 +54,7 @@ public class Library
 		}
 		return resultTile;
 	}
+	
 	public Book searchAuthor(String searchFor)
 	{
 		toPrint.clear();	
@@ -56,11 +63,7 @@ public class Library
 		{
 			if(myLibrary.get(i).getAuthor().contains(searchFor))
 			{
-				resultAuthor = new Book();
-				resultAuthor.setTitle(myLibrary.get(i).getTitle());
-				resultAuthor.setAuthor(myLibrary.get(i).getAuthor());
-				resultAuthor.setIsbn(myLibrary.get(i).getIsbn());
-				resultAuthor.setSignature(myLibrary.get(i).getSignature());
+				resultAuthor = setBookFeatures(i);
 				toPrint.add(resultAuthor);	
 				found = true;				
 			}
@@ -89,11 +92,7 @@ public class Library
 		{
 			if(myLibrary.get(i).getIsbn().contains(searchFor))
 			{
-				resultIsbn = new Book();
-				resultIsbn.setTitle(myLibrary.get(i).getTitle());
-				resultIsbn.setAuthor(myLibrary.get(i).getAuthor());
-				resultIsbn.setIsbn(myLibrary.get(i).getIsbn());
-				resultIsbn.setSignature(myLibrary.get(i).getSignature());
+				resultIsbn = setBookFeatures(i);
 				toPrint.add(resultIsbn);
 				found = true;
 			}

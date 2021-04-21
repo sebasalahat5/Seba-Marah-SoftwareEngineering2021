@@ -33,8 +33,7 @@ public class Book {
 	static boolean isValidISBN(String isbn) 
     { 
        
-        int c = isbn.length(); 
-        if (c != 10) 
+        if (isbn.length() != 10) 
             return false; 
  
         int sum = 0; 

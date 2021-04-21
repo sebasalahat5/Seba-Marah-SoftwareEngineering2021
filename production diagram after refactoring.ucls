@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="org.library.Library" project="proLibrary" 
     file="/proLibrary/src/main/java/org/library/Library.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="298" y="148"/>    
+    <position height="279" width="156" x="224" y="63"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="org.library.Admin" project="proLibrary" 
     file="/proLibrary/src/main/java/org/library/Admin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="511" y="198"/>    
+    <position height="315" width="150" x="420" y="63"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="org.library.Book" project="proLibrary" 
     file="/proLibrary/src/main/java/org/library/Book.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="284" y="485"/>    
+    <position height="333" width="237" x="224" y="418"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,24 +30,16 @@
   </class>  
   <association id="4">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="myLibrary">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="6" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="5" name="myLibrary"/>      
+      <multiplicity id="6" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="7">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="8" name="toPrint">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="8" name="toPrint"/>      
+      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
